@@ -1,6 +1,6 @@
 import re
 
-
+# Add exception for raise error
 class EmailDoesNotExistException(Exception):
     """
     Exception for email doesn't exist for this user
@@ -19,6 +19,7 @@ class User(object):
         self.email = email
         self.book = {}
 
+    # Verify email, when try to create new User or update User.email
     def verify_email(email):
         regex = re.compile(r"^[a-z0-9._-]+@[a-z0-9._-]+\.[(com|edu|org)]+")
         if (regex.match(email) is not None):
@@ -46,6 +47,7 @@ class User(object):
         for book in self.book:
             print(book)
 
+    # Sum cost for all books read by user
     def get_sum_cost_books(self):
         cost = 0
         for book in self.book:
@@ -244,6 +246,9 @@ class TomeRater(object):
 
         return isSorted[:n]
 
+    # The most expensive books
+    # Show n expensive books
+    # @return books array
     def get_n_most_expensive_books(self, n):
         price_book = {}
         isSorted = []
@@ -258,6 +263,9 @@ class TomeRater(object):
 
         return isSorted[:n]
 
+    # All books user cost
+    # Show all books cost
+    # @return books total cost from user
     def get_worth_of_user(self, user_email):
         if (self.users.get(user_email)):
             user = self.users[user_email]
@@ -272,6 +280,7 @@ class TomeRater(object):
         for user in self.users:
             print(user)
 
+    # Get all user books
     def show_user_books(self, email):
         if (self.users.get(email)):
             print("- User books:")
