@@ -41,7 +41,6 @@ print(novel2.set_price(22))
 print(novel2.get_price())
 
 print("")
-# Uncomment these to test your functions:
 Tome_Rater.print_catalog()
 Tome_Rater.print_users()
 
@@ -66,6 +65,7 @@ print("- Books with highest price:")
 print(Tome_Rater.get_n_most_expensive_books(2))
 
 print("- Sum costs all book for user:")
+print(Tome_Rater.get_worth_of_user("alan@turing.com"))
 print(Tome_Rater.get_worth_of_user("david@computation.org"))
 
 print(Tome_Rater)
