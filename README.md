@@ -2,7 +2,7 @@
 ## Language : *Python 3*
 
 # Get Started
-1. Git clone or download zip (if this, unzip when it's downloaded)
+1. ```Git clone https://github.com/Mushu2a/pwp-capstones.git``` or download zip (if this, unzip when it's downloaded)
 2. Open your command line and navigate to the TomeRater directory:
 ```cd TomeRater```
 3. Run the file populate.py, using the command:
