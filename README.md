@@ -2,9 +2,10 @@
 ## Language : *Python 3*
 
 # Get Started
-1. Open your command line and navigate to the TomeRater directory:
+1. Git clone or download zip (if this, unzip when it's downloaded)
+2. Open your command line and navigate to the TomeRater directory:
 ```cd TomeRater```
-2. Run the file populate.py, using the command:
+3. Run the file populate.py, using the command:
 ```python3 -i populate.py```
 This file, populate.py, will create a TomeRater object called Tome_Rater 
 and fill it with some users and books. The -i flag will leave the terminal 
