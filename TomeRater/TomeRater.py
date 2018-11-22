@@ -56,16 +56,14 @@ class User(object):
         return cost
 
     def get_average_rating(self):
-        count = 0
         average = 0
         for book, rating in self.book.items():
             if (rating != None):
                 average += rating
-                count += 1
 
-        if (count != 0):
-            return round(average / count, 1)
-        else:
+        try:
+            return round(average / len(self.book.keys()), 1)
+        except ZeroDivisionError:
             return 0
 
     def __repr__(self):
