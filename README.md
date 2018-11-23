@@ -13,6 +13,10 @@ open for you to play with. You can then run some of your methods you
 created in the last section by using syntax like:
 ```Tome_Rater.most_positive_user()```
 
+## You can execute a Test file
+1. Use [unittest](https://docs.python.org/3/library/unittest.html) librairie
+2. Execute or modify ```TomeRater_Test.py``` ```python3 TomeRater_Test.py``` for add new one
+
 ### What we can do with this project:
 ```
 - Create new User
